@@ -7,6 +7,7 @@ body {
   padding: 0%;
   background-color: var(--light);
   min-width: 530px;
+  height: 100%;
 }
 nav {
   display: flex;
@@ -33,6 +34,9 @@ nav a {
   padding: 10px;
   border-style: ridge;
   border-color: var(--light);
+  margin-top: 5px;
+  min-width: 135px;
+  text-align: center;
 }
 ul a:hover {
   background-color: black;
@@ -85,17 +89,37 @@ article a img:hover {
 footer {
   background-color: dimgray;
   width: 100%;
+  padding: 10px 0;
+  flex-shrink: 0;
+  margin-top: auto;
 }
 footer h3 {
   font-family: 'Courier New', Courier, monospace;
   color: var(--dark);
 }
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-icons a {
+  margin: 0 10px;
+}
+.projects-article img {
+  min-height: 210px;
+  margin-right: 5px;
+}
+
+.skills-list {
+  margin-left: 15px;
+}
+
 .make-space {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   overflow: visible;
+  min-height: 100vh;
 }
 .flex-wrap {
   display: flex;

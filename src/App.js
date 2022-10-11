@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import About from './components/About';
+import Resume from './components/Resume';
 import './App.css'
 
 function App() {
@@ -13,18 +14,18 @@ function App() {
     switch (currentPage) {
       case 'About':
         return <About/>
-        break;
       case 'Projects':
         return <Projects/>
-        break;
       case 'Contact':
         return <Contact/>
+      case 'Resume':
+        return <Resume/>
       default:
         break;
     }
   }
   return (
-    <div class="make-space">
+    <div className="make-space">
       <Nav setCurrentPage = {setCurrentPage}/>
       {render()}
       <Footer/>
